@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Music selection buttons -->
+    <div id="music-controls">
+        <button onclick="playSong(0)">Play Song 1</button>
+        <button onclick="playSong(1)">Play Song 2</button>
+        <button onclick="playSong(2)">Play Song 3</button>
+        <button onclick="playSong(3)">Play Song 4</button>
+    </div>
+
+    <!-- Embed Apple Music tracks -->
+    <div id="apple-music-embeds">
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" 
+            style="width:100%;max-width:660px;overflow:hidden;background:transparent; display:none;" 
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation 
+            allow-top-navigation-by-user-activation" 
+            src="https://embed.music.apple.com/us/album/somebody-to-you-feat-demi-lovato/1440812628?i=1440812641">
+        </iframe>
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent; display:none;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/just-the-way-you-are/576654788?i=576655095"></iframe>
+
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent; display:none;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/have-it-all/1396746290?i=1396747070"></iframe>
+
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent; display:none;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/next-to-me/1411625594?i=1411627254"></iframe>
+    </div>
+
+    <!-- Images for songs -->
+    <div id="images">
+        <img id="image1" src="images/image1.jpg" style="display:none;">
+        <img id="image2" src="images/image2.jpg" style="display:none;">
+        <img id="image3" src="images/image3.jpg" style="display:none;">
+        <img id="image4" src="images/image4.JPG" style="display:none;">
+        <img id="image5" src="images/image5.JPG" style="display:none;">
+        <img id="image6" src="images/image6.jpg" style="display:none;">
+        <img id="image7" src="images/image7.JPG" style="display:none;">
+        <img id="image8" src="images/image8.jpg" style="display:none;">
+    </div>
+
+    <button id="bypass-button" onclick="showMainPage()">Bypass</button>
+    <div id="quiz-container">
+        <div id="question-container">
+            <h1 id="question">When did I ask you out (MM/DD/YYYY)?</h1>
+            <input type="text" id="answer" placeholder="Enter your answer...">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="error-message" style="display: none;">Incorrect, try again!</p>
+        </div>
+    </div>
+    
+    <div id="main-content" style="display: none;">
+        <div class="content-wrapper">
+            <h1>Happy Four Years!</h1>
+            <p>Thank you for making this the best years of my life. This past year I have fallen so much more in love with you (didn't really know that would be possible tbh). From our bike date, to W4E, to Imagine Dragons, to formal, I have enjoyed every second I spent with you. No one can make me laugh harder and smile wider than you do, and no one comes close to the amount of love I have for you.</p>
+            <p>I love you and miss you more than anything. Counting down the seconds until you're Next To Me in Nashville,</p>
+            <p>Kyle</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

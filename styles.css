@@ -154,13 +154,13 @@ button:hover {
 }
 
 #image1, #image3, #image5, #image7 {
-    left: 30px; /* Position left images */
+    left: 20px; /* Position left images */
     top: 50%;
     transform: translateY(-50%);
 }
 
 #image2, #image4, #image6, #image8 {
-    right: 30px; /* Position right images */
+    right: 20px; /* Position right images */
     top: 50%;
     transform: translateY(-50%);
 }
